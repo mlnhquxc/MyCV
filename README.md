@@ -1,78 +1,117 @@
-# CV Website
+# MyCV - Personal Resume Website
 
-Đây là website CV cá nhân được tạo từ template [MyCV](https://github.com/KhuongVo2105/MyCV).
+This is my personal CV website built with HTML, CSS, and JavaScript. The website features a modern, responsive design with interactive sections and automatic deployment to GitHub Pages.
 
-## Cấu trúc project
+## 🌟 Features
 
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Modern UI/UX**: Clean and professional interface
+- **Interactive Sections**: Smooth scrolling and hover effects
+- **Social Media Integration**: Links to LinkedIn, GitHub, and Portfolio
+- **Resume Modal**: Embedded Canva resume viewer
+- **Auto Deployment**: Automatic deployment to GitHub Pages via GitHub Actions
+
+## 🚀 Live Demo
+
+Visit the live website: [https://mlnhquxc.github.io/MyCV/](https://mlnhquxc.github.io/MyCV/)
+
+## 🛠️ Getting Started
+
+### Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/mlnhquxc/MyCV.git
+cd MyCV
 ```
-myCV/
-├── index.html          # File HTML chính
-├── package.json        # Cấu hình project
-├── css/               # Thư mục CSS
-│   └── styles.css     # File CSS chính
-├── js/                # Thư mục JavaScript
-│   └── scripts.js     # File JS chính
-├── assets/            # Thư mục tài nguyên
-│   └── img/           # Hình ảnh
-└── info.json          # File JSON chứa thông tin CV
-```
 
-## Cài đặt và chạy
-
-1. Cài đặt dependencies:
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Chạy development server:
+3. Start development server:
 ```bash
 npm start
-# hoặc
+# or
 npm run dev
 ```
 
-3. Mở trình duyệt tại: http://localhost:3000
+4. Open your browser and visit `http://localhost:3000`
 
-## Tùy chỉnh CV
+### Building for Production
 
-### 1. Thông tin cá nhân
-Chỉnh sửa file `index.html` để cập nhật:
-- Tên
-- Địa chỉ
-- Số điện thoại  
-- Email
-- Các liên kết mạng xã hội
+```bash
+npm run build
+```
 
-### 2. Hình ảnh profile
-Thay thế file `assets/img/profile.jpg` bằng ảnh của bạn.
+## 📦 Deployment
 
-### 3. Nội dung CV
-Cập nhật các section trong `index.html`:
-- About (Giới thiệu)
-- Education (Học vấn)
-- Skills (Kỹ năng)
-- Projects (Dự án)
-- More (Thêm thông tin)
+This project uses GitHub Actions for automatic deployment to GitHub Pages. Every push to the `quoc` or `main` branch will trigger a new deployment.
 
-### 4. Sử dụng info.json
-File `info.json` có thể được sử dụng để lưu trữ dữ liệu CV một cách có cấu trúc.
+### Manual Deployment Setup
 
-## Tính năng
+1. Go to your repository settings
+2. Navigate to **Pages** section
+3. Under **Source**, select **GitHub Actions**
+4. The workflow will automatically deploy your site
 
-- Responsive design (tương thích mobile)
-- Smooth scrolling navigation
-- Bootstrap 5 framework
-- Font Awesome icons
-- Modern và professional design
+## 🏗️ Project Structure
 
-## Triển khai
+```
+MyCV/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Actions workflow
+├── assets/
+│   └── img/                    # Images and icons
+├── css/
+│   └── styles.css             # Main stylesheet
+├── js/
+│   └── scripts.js             # JavaScript functionality
+├── index.html                 # Main HTML file
+├── info.json                  # Personal information data
+├── package.json               # Node.js dependencies
+└── README.md                  # Project documentation
+```
 
-Có thể deploy lên:
-- GitHub Pages
-- Netlify
-- Vercel
-- Hoặc bất kỳ hosting service nào
+## 🔧 Technologies Used
 
-## Tác giả gốc
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Styling**: Bootstrap 5, Custom CSS
+- **Icons**: Font Awesome
+- **Build Tools**: Node.js, NPM
+- **Deployment**: GitHub Actions, GitHub Pages
+- **Development**: Live Server
 
-Template gốc được tạo bởi [KhuongVo2105](https://github.com/KhuongVo2105/MyCV)
+## 📝 Customization
+
+1. **Personal Information**: Edit `info.json` to update your details
+2. **Resume**: Update the Canva embed URL in `index.html` (line 718)
+3. **Projects**: Modify the projects section in `index.html`
+4. **Styling**: Customize `css/styles.css` for visual changes
+5. **Images**: Replace images in `assets/img/` folder
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Nguyễn Ngọc Minh Quốc (mlnhquxc)**
+
+- GitHub: [@mlnhquxc](https://github.com/mlnhquxc)
+- LinkedIn: [mlnhquxc](https://www.linkedin.com/in/mlnhquxc/)
+- Email: mlnhquxc.work@gmail.com
+
+---
+
+⭐ If you found this project helpful, please give it a star on GitHub!

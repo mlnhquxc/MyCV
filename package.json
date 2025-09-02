@@ -6,6 +6,7 @@
   "scripts": {
     "start": "live-server --port=3000 --open=/index.html",
     "dev": "live-server --port=3000 --open=/index.html",
+    "build": "mkdir -p build && cp -r assets css js index.html info.json build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["cv", "resume", "portfolio", "website"],
